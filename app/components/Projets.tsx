@@ -2,21 +2,21 @@ import { Card } from "@/components/ui/card";
 
 export const Projets = () => {
     return (
-        <section className="flex flex-col items-center px-4 py-8">
+        <section className="flex flex-col items-center px-4 py-8 border-none">
             <HoverEffect>
-                <Card className="w-full max-w-2xl p-4 mb-8">
+                <Card className="w-full max-w-2xl p-4 mb-8 border-none" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}>
                     <div className="text-center">
-                        <h2 className="text-xl font-bold mb-2">Mes projets</h2>
-                        <p className="mb-4">Projets réalisés en groupe pour THP</p>
+                        <h2 className="text-xl text-lg font-bold text-primary mb-2">Mes projets</h2>
+                        <p className="mb-4">Projets réalisés en groupe pour The Hacking Project</p>
                     </div>
                     <div className="flex flex-col gap-4">
-                    <center><h1>Menu?</h1></center> 
+                        <center><h1 className=" text-lg font-bold text-primary">Menu?</h1></center> 
                         <ProjetItem
                             titre=""
                             lien="https://github.com/Jokeraware/MENU.git"
                             image="/Menu.png"
                         />
-                         <center><h1>Chapatte</h1></center> 
+                        <center><h1 className="text-lg font-bold text-primary">Chapatte</h1></center> 
                         <ProjetItem
                             titre=""
                             lien="https://github.com/NicolasBaldo/Chapattte.git"
@@ -28,7 +28,7 @@ export const Projets = () => {
 
             <div className="w-full max-w-xl flex flex-col gap-4">
                 <HoverEffect>
-                    <Card className="p-4">
+                    <Card className="p-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}>
                         <h2 className="text-xl font-bold mb-2">Téléchargez mon CV</h2>
                         <p className="mb-4">
                             <a href="/CV.pdf" className="text-blue-500 hover:underline">Téléchargez mon CV</a>
@@ -36,10 +36,10 @@ export const Projets = () => {
                     </Card>
                 </HoverEffect>
                 <HoverEffect>
-                    <Card className="p-4">
+                    <Card className="p-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}>
                         <h2 className="text-xl font-bold mb-2">Contactez-moi</h2>
                         <p className="mb-4">
-                            Pour me contacter, envoyez un email à <a href="mailto:votre@email.com" className="text-blue-500 hover:underline">votre@email.com</a>.
+                            Pour me contacter, envoyez un email à <a href="mailto:septfoisept@outlook.fr" className="text-blue-500 hover:underline">NicolasBaldo</a>.
                         </p>
                     </Card>
                 </HoverEffect>
@@ -48,7 +48,7 @@ export const Projets = () => {
     );
 }
 
-// Composant pour afficher chaque projet individuel
+
 const ProjetItem = ({ titre, lien, image }) => {
     return (
         <a href={lien} className="block">
@@ -60,7 +60,7 @@ const ProjetItem = ({ titre, lien, image }) => {
     );
 }
 
-// Composant pour ajouter l'effet de survol sur les cartes
+
 const HoverEffect = ({ children }) => {
     return (
         <div className="hover:border-1 transform-scale-105 transform-scale-095 rotate-z-1.7">

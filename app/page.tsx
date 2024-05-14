@@ -2,6 +2,7 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Projets } from "./components/Projets";
 import { Spacing } from "./components/Spacing";
+import { Technos } from "./components/Technos"
 import './globals.css'
 
 export default function Home() {
@@ -12,7 +13,8 @@ export default function Home() {
   <Hero />
   <Spacing size="md" /> 
   <Projets /> 
-
+  <Spacing size="md" /> 
+  <Technos />
    </main>
   
   ); } 
