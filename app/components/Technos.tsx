@@ -27,6 +27,7 @@ export const Technos = () => {
                             <TechIcon src="/git-icon.svg" alt="Logo 2" />
                             <TechIcon src="/github.svg" alt="Logo 3" />
                             <TechIcon src="/figma.png" alt="Logo 3" />
+                            <TechIcon src="/nodejs.svg" alt="Logo 3" />
                         </div>
                     </Card>
             
